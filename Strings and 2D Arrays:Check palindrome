@@ -1,0 +1,20 @@
+public class Solution {
+public static boolean checkPalindrome(String str){
+    String a="";
+    String b="";
+for(int i=0;i<str.length();i++)
+{
+ a=a+str.charAt(i);
+}
+for(int j=str.length()-1;j>=0;j--)
+{
+ b=b+str.charAt(j);
+}
+if(a.equals(b))
+{
+    return true;
+}
+    else
+        return false;
+	}
+}
