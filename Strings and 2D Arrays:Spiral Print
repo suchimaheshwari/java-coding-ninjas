@@ -1,0 +1,45 @@
+public class solution {
+public static void spiralPrint(int matrix[][]){
+	int rStart=0;
+    int rEnd=matrix.length-1;
+    int cStart=0;
+    int cEnd=matrix[0].length-1;
+    int counter=0;
+    while(counter<matrix.length*matrix[0].length){
+    
+    
+        for(int j=cStart;j<=cEnd;j++)
+        {
+            System.out.print(matrix[rStart][j]+" ");
+            counter++;
+        }
+
+    
+        rStart++;
+        for(int i=rStart;i<=rEnd;i++){
+            System.out.print(matrix[i][cEnd]+" ");
+            counter++;
+        }
+        cEnd--;
+        for(int i=cEnd;i>=cStart;i--)
+        {
+            System.out.print(matrix[rEnd][i]+" ");
+            counter++;
+            // i--;
+        }
+        rEnd--;
+        for(int i=rEnd;i>=rStart;i--)
+        {
+            System.out.print(matrix[i][cStart]+" ");
+            counter++;
+        }
+        cStart++;
+//         for(int i=cStart;i<=cEnd;i++)
+//         {
+//             System.out.print(matrix[rStart][i]+" ");
+//         }
+        
+            
+    }
+}
+}
