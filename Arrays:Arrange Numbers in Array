@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Solution {
+public static int[] arrange(int n){
+int input[]=new int[n];
+    int s=0;
+    int e=n-1;
+    int val=1;
+    int mid=n/2;
+    input[mid]=n;
+    while((s<=(n-1)/2) && (e>=((n-1)/2)+1))
+    {
+        input[s]=val;
+        val++;
+        input[e]=val;
+        val++;
+        s++;
+        e--;
+    }
+
+  
+
+  return input;      
+}	
+
+	}
+	
+
