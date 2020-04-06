@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Solution {
+
+	public static void main(String[] args) {
+	Scanner s=new Scanner(System.in);
+        int M=s.nextInt();
+        int N=s.nextInt();
+        int matrix[][]=new int[M][N];
+        for(int i=0;i<M;i++)
+        {
+            for(int j=0;j<N;j++)
+            {
+                matrix[i][j]=s.nextInt();
+            }
+        }
+      
+        for(int i=0;i<M;i++)
+        {
+             int sum=0;
+            for(int j=0;j<N;j++)
+            {
+               sum+=matrix[i][j];
+            }
+             System.out.print(sum+" ");
+        }
+       
+
+	}
+}
