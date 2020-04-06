@@ -1,0 +1,23 @@
+public class Solution
+{	
+    public static void intersections(int[] input1, int[] input2)
+    {
+        boolean visited[]=new boolean[input2.length];  
+        for(int i=0;i<input1.length;i++)
+        { 
+            int temp=input1[i];
+            for( int j=0;j<input2.length;j++)
+            {
+                if(visited[j]==false)
+                {
+                    if (temp==input2[j])
+                    {
+                        visited[j]=true;
+                        System.out.println(temp);
+                        break;
+                    }
+                }
+            }
+        }
+    }
+}
