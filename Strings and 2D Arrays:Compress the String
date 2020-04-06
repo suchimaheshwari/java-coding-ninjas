@@ -1,0 +1,29 @@
+public class Solution {
+
+String s="";
+        char ch=inputString.charAt(0);
+        int count = 1;
+        for(int i=1;i<inputString.length();i++)
+        {   char c=inputString.charAt(i);
+         if(ch==c){
+             count++;
+         }
+         else{
+             if(count>1)
+                 s=s+ch+count;
+             else
+                 s=s+ch;
+
+             count=1;
+         }
+         ch = c;
+        }
+
+        if(count>1)
+            s=s+ch+count;
+        else
+            s=s+ch;
+        
+        return s;}
+}
+
