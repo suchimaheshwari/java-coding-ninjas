@@ -1,0 +1,24 @@
+public class Solution{	
+public static void pairSum(int[] input, int x){
+for(int i=0;i<input.length;i++)
+{
+    int temp=input[i];
+    for(int j=i+1;j<input.length;j++)
+    {
+        if(temp+input[j]==x)
+        {
+            if(temp<input[j])
+                System.out.println(temp + " " + input[j]);
+                if(temp>input[j])
+                      System.out.println(input[j] + " " + temp);
+                   if(temp==input[j])
+                      System.out.println(input[j] + " " + temp);
+            
+                    
+        }
+    }
+}
+	
+		
+	}
+}
