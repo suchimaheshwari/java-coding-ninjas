@@ -1,0 +1,73 @@
+
+public class solution {
+    public static String removeAllOccurrencesOfChar(String input, char c) {
+        String s="";
+        for(int i=0;i<input.length();i++)
+        {
+            char t=input.charAt(i);
+            if(c==t)
+                continue;
+            else  {
+               
+             s=s+t+"";
+            }
+
+        }
+        return s;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Write your code here
+//    int j, count = 0, n = input.length(); 
+//     char []t = input.toCharArray(); 
+//     for (int i = j = 0; i < n; i++) 
+//     { 
+//         if (t[i] != c) 
+//         t[j++] = t[i]; 
+//         else
+//             count++; 
+//     } 
+
+//     while(count > 0) 
+//     { 
+//         t[j++] = '\0'; 
+//         count--; 
+//     } 
+
+//         return t; 
+
+// }
+// }
