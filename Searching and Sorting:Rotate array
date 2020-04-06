@@ -1,0 +1,29 @@
+public class ArrayRotate {	
+public static void rotate(int[] arr, int d) {
+int temp[]=new int[arr.length];
+int k=0;
+    d = d % arr.length ; 
+    int c=temp.length-d;
+for(int i=0;i<d ;i++) {
+temp[c]=arr[i];
+    c++;
+}
+for(int j=d;j<arr.length ;j++,k++)
+temp[k]=arr[j];
+
+for(int p=0;p<temp.length;p++)
+arr[p]=temp[p];
+}
+}
+//or
+public class ArrayRotate {	
+public static void rotate(int[] arr, int d) {
+    int temp[]=new int[arr.length];
+    for(int i=0;i<arr.length;i++)
+        temp[i]=arr[i];
+    for(int i=0;i<arr.length;i++){
+        arr[i]=temp[(i+d)%arr.length];
+    }
+}
+}
+   
