@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+	
+	public static void main(String[] args) {
+	Scanner s = new Scanner(System.in);
+        double basic = s.nextInt();
+        String gradeString = s.next();
+        char allow = gradeString.charAt(0);
+        double hra = (20.0/100)*basic;
+        double da = (50.0/100)*basic;
+        double pf = (11.0/100)*basic;
+        int al;
+        if(allow=='A')
+        {
+            al=1700;
+        }
+        else if(allow=='B')
+        {
+            al=1500;
+        }
+        else
+        {
+            al=1300;
+        }
+        double totalSal=basic+hra+da+al-pf;
+        System.out.println(Math.round(totalSal));
+        
+	}
+}
