@@ -1,0 +1,15 @@
+public class solution {
+public static String removeConsecutiveDuplicates(String input) {
+    char lastChar=input.charAt(0);
+    String ans=input.charAt(0)+"";
+    for(int i=1;i<input.length();i++)
+    {
+        if(input.charAt(i)!=lastChar)
+        {
+            ans=ans+input.charAt(i);
+            lastChar=input.charAt(i);
+        }
+    }
+    return ans;
+}
+}
